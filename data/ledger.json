@@ -1,0 +1,276 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": "2026-11-19T10:20:44+00:00",
+      "transactions": [
+        {
+          "type": "GENESIS",
+          "message": "ColdChainRegistry ledger created"
+        }
+      ],
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 161,
+      "hash": "00495854f2c3af0c3f13ceb6e913072f819b971b67a6978e4db8fa791beefa06"
+    },
+    {
+      "index": 1,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "BATCH_REGISTERED",
+          "batch_id": "DEMO-001",
+          "vaccine_name": "Demo Vaccine A",
+          "manufacturer": "Demo Pharma Ltd",
+          "min_temp": 2.0,
+          "max_temp": 8.0,
+          "expiry_date": "2027-11-19",
+          "actor": "Manufacturer",
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00495854f2c3af0c3f13ceb6e913072f819b971b67a6978e4db8fa791beefa06",
+      "nonce": 106,
+      "hash": "00385e4db7468f79ebc5ffce94707ca506fa20a9b8447943bd43eb667f39ec50"
+    },
+    {
+      "index": 2,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "TEMPERATURE_RECORDED",
+          "batch_id": "DEMO-001",
+          "temperature": 5.0,
+          "note": "Routine check",
+          "actor": "Sensor Operator",
+          "within_range": true,
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00385e4db7468f79ebc5ffce94707ca506fa20a9b8447943bd43eb667f39ec50",
+      "nonce": 3,
+      "hash": "00ed2ff6cb3e26dd5bf4a9276ab01567e7cf7785596730f7be57b31038c11b8a"
+    },
+    {
+      "index": 3,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "TEMPERATURE_RECORDED",
+          "batch_id": "DEMO-001",
+          "temperature": 12.5,
+          "note": "Fridge door left open",
+          "actor": "Sensor Operator",
+          "within_range": false,
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00ed2ff6cb3e26dd5bf4a9276ab01567e7cf7785596730f7be57b31038c11b8a",
+      "nonce": 19,
+      "hash": "0095e72ab77cf65fadba9eec7d11bbc07182b367a8074df7b0406c6595084f34"
+    },
+    {
+      "index": 4,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "BATCH_REGISTERED",
+          "batch_id": "DEMO-002",
+          "vaccine_name": "Demo Vaccine B",
+          "manufacturer": "Demo Pharma Ltd",
+          "min_temp": 2.0,
+          "max_temp": 8.0,
+          "expiry_date": "2027-11-19",
+          "actor": "Manufacturer",
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "0095e72ab77cf65fadba9eec7d11bbc07182b367a8074df7b0406c6595084f34",
+      "nonce": 35,
+      "hash": "00257168ab741e0f4be78814a264078966246435cd8ddfce61e7f629d20a69a1"
+    },
+    {
+      "index": 5,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "TEMPERATURE_RECORDED",
+          "batch_id": "DEMO-002",
+          "temperature": 4.5,
+          "note": "Routine check",
+          "actor": "Sensor Operator",
+          "within_range": true,
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00257168ab741e0f4be78814a264078966246435cd8ddfce61e7f629d20a69a1",
+      "nonce": 259,
+      "hash": "0011bd06a263c8f54a43968780194aa2d09fd0f57610f7c28e5fcac1ce2e9a2d"
+    },
+    {
+      "index": 6,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "CUSTODY_TRANSFERRED",
+          "batch_id": "DEMO-002",
+          "from": "Manufacturer",
+          "to": "Distributor",
+          "actor": "Manufacturer",
+          "note": "Demo handover",
+          "timestamp": "2026-11-19T11:56:34+00:00",
+          "tampered_demo": true
+        }
+      ],
+      "previous_hash": "0011bd06a263c8f54a43968780194aa2d09fd0f57610f7c28e5fcac1ce2e9a2d",
+      "nonce": 144,
+      "hash": "000f57e7ea492dbb90fda8d3f57843d3a242840a1d930673f839b44824d42ff1"
+    },
+    {
+      "index": 7,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "TEMPERATURE_RECORDED",
+          "batch_id": "DEMO-002",
+          "temperature": 6.0,
+          "note": "Truck check",
+          "actor": "Sensor Operator",
+          "within_range": true,
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "000f57e7ea492dbb90fda8d3f57843d3a242840a1d930673f839b44824d42ff1",
+      "nonce": 152,
+      "hash": "007fc0f325ed1b5247932e44fd5d93b9262772c88a19e975f4b46df2ad031d08"
+    },
+    {
+      "index": 8,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "CUSTODY_TRANSFERRED",
+          "batch_id": "DEMO-002",
+          "from": "Distributor",
+          "to": "Clinic",
+          "actor": "Distributor",
+          "note": "Demo handover",
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "007fc0f325ed1b5247932e44fd5d93b9262772c88a19e975f4b46df2ad031d08",
+      "nonce": 144,
+      "hash": "00d61617b21bf41d6a89e6bc8ee8ff5119969bfcf17b4b6a03a7da85aee8200f"
+    },
+    {
+      "index": 9,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "BATCH_REGISTERED",
+          "batch_id": "DEMO-003",
+          "vaccine_name": "Demo Vaccine C",
+          "manufacturer": "Demo Pharma Ltd",
+          "min_temp": 2.0,
+          "max_temp": 8.0,
+          "expiry_date": "2027-11-19",
+          "actor": "Manufacturer",
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00d61617b21bf41d6a89e6bc8ee8ff5119969bfcf17b4b6a03a7da85aee8200f",
+      "nonce": 289,
+      "hash": "00800210560311cb984ce42c58a4c03532f585ac2ebe6fba04328656ace9991c"
+    },
+    {
+      "index": 10,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "TEMPERATURE_RECORDED",
+          "batch_id": "DEMO-003",
+          "temperature": 9.5,
+          "note": "Slight warm-up in transit",
+          "actor": "Sensor Operator",
+          "within_range": false,
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00800210560311cb984ce42c58a4c03532f585ac2ebe6fba04328656ace9991c",
+      "nonce": 38,
+      "hash": "00d09f4b625a0088acaf867e6dab56262c8c783b4de17830f775a8e45a9f95b8"
+    },
+    {
+      "index": 11,
+      "timestamp": "2026-11-19T11:56:34+00:00",
+      "transactions": [
+        {
+          "type": "BATCH_RELEASED",
+          "batch_id": "DEMO-003",
+          "actor": "Regulator",
+          "reason": "Excursion reviewed, product safe",
+          "timestamp": "2026-11-19T11:56:34+00:00"
+        }
+      ],
+      "previous_hash": "00d09f4b625a0088acaf867e6dab56262c8c783b4de17830f775a8e45a9f95b8",
+      "nonce": 361,
+      "hash": "006d77fab8087e9cb0d612017da9ee5f05e0c905f49155301e39c14a9d475639"
+    },
+    {
+      "index": 12,
+      "timestamp": "2026-11-23T10:03:15+00:00",
+      "transactions": [
+        {
+          "type": "BATCH_REGISTERED",
+          "batch_id": "VAX-001",
+          "vaccine_name": "Covid",
+          "manufacturer": "Demo Pharma Ltd",
+          "min_temp": 2.0,
+          "max_temp": 8.0,
+          "expiry_date": "2026-11-23",
+          "actor": "Manufacturer",
+          "timestamp": "2026-11-23T10:03:15+00:00"
+        }
+      ],
+      "previous_hash": "006d77fab8087e9cb0d612017da9ee5f05e0c905f49155301e39c14a9d475639",
+      "nonce": 50,
+      "hash": "00878f49a628014eee880df33fd7081563f7f018cee57a7438fe652b4cbe53a9"
+    },
+    {
+      "index": 13,
+      "timestamp": "2026-11-23T10:03:51+00:00",
+      "transactions": [
+        {
+          "type": "TEMPERATURE_RECORDED",
+          "batch_id": "DEMO-001",
+          "temperature": 12.5,
+          "note": "",
+          "actor": "Regulator",
+          "within_range": false,
+          "timestamp": "2026-11-23T10:03:51+00:00"
+        }
+      ],
+      "previous_hash": "00878f49a628014eee880df33fd7081563f7f018cee57a7438fe652b4cbe53a9",
+      "nonce": 120,
+      "hash": "005a7938499f8edbac7d6cc7ff6bb702fd9f08cab5d537d57664f320044e3204"
+    },
+    {
+      "index": 14,
+      "timestamp": "2026-11-23T10:04:21+00:00",
+      "transactions": [
+        {
+          "type": "CUSTODY_TRANSFERRED",
+          "batch_id": "VAX-001",
+          "from": "Manufacturer",
+          "to": "Distributor",
+          "actor": "Manufacturer",
+          "note": "Classroom custody handover record",
+          "timestamp": "2026-11-23T10:04:21+00:00"
+        }
+      ],
+      "previous_hash": "005a7938499f8edbac7d6cc7ff6bb702fd9f08cab5d537d57664f320044e3204",
+      "nonce": 105,
+      "hash": "008a4a51180b44cc33311e95ff3fa620c729949bc23a1d4a69dac56cc348a863"
+    }
+  ]
+}
